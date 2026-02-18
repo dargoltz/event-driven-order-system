@@ -2,7 +2,7 @@ from typing import Annotated
 
 from fastapi import HTTPException, Header, Depends
 
-from services.gateway.core.config import config
+from services.gateway.src.core.config import config
 
 
 def check_api_key(api_key: str = Header(...)):
