@@ -5,15 +5,11 @@ from pydantic import BaseModel, Field
 
 
 class Status(str, Enum):
-    CREATED = "created"
-    AWAITING_PAYMENT = "awaiting payment"
-    PAID = "paid"
-    COMPLETED = "completed"
-    CANCELLED = "cancelled"
-
-
-class OrderCreateRequest(BaseModel):
-    amount: float = Field(gt=0)
+    CREATED = "CREATED"
+    AWAITING_PAYMENT = "AWAITING_PAYMENT"
+    PAID = "PAID"
+    COMPLETED = "COMPLETED"
+    CANCELLED = "CANCELLED"
 
 
 class OrderResponse(BaseModel):
