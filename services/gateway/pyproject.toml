@@ -1,0 +1,11 @@
+[project]
+name = "gateway"
+version = "0.1.0"
+description = "gateway service for event-driven-order-system"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.115.6",
+    "uvicorn>=0.36.0",
+    "pydantic-settings>=2.7.0",
+]
